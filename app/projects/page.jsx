@@ -1,5 +1,4 @@
-import ProyectCard from "@/components/ProyectCard";
-import { Suspense } from "react";
+import ProjectCard from "@/components/ProjectCard";
 
 const imag = [
   {name:'ima1' , src:'/images/1157039.png'},
@@ -29,7 +28,7 @@ const imag = [
 const About = () => {
   return (
       <main>
-      <ProyectCard imag={imag}/>
+      <ProjectCard imag={imag}/>
     </main>
   )
 }

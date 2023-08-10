@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function ProyectCard({ imag }) {
+function ProjectCard({ imag }) {
   return (
       <section className="grid grid-cols-1 md:grid-cols-3 p-5 gap-5">
         {imag.map((img) => (
@@ -19,4 +19,4 @@ function ProyectCard({ imag }) {
   );
 }
 
-export default ProyectCard
+export default ProjectCard

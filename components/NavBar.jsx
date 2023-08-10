@@ -11,7 +11,7 @@ import NavMenu from './NavMenu'
 
 const links = [
   { name: 'Inicio', icons: <GoHomeFill />, path: '/' },
-  { name: 'Proyectos', icons: <HiLightBulb />, path: '/proyects' },
+  { name: 'Proyectos', icons: <HiLightBulb />, path: '/projects' },
   { name: 'Posts', icons: <CgColorBucket />, path: '#' },
   { name: 'Twitter', icons: <FaTwitter />, path: 'https://twitter.com/MegaTroy777' },
   { name: 'Linkedin', icons: <BsLinkedin />, path: 'https://www.linkedin.com/in/julian-iocco-579a90224/' },
