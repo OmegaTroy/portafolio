@@ -1,5 +1,3 @@
-Sure, I can do that. Here is the README.md file for your code:
-
 # Julian Iocco - Portafolio
 
 This is a Next.js project that showcases my work as a full-stack developer. It features a responsive design, a dark mode, and a custom color palette.
