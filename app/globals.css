@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+
+.textDecors{ 
+  position: relative;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.textDecors::before{
+  content: attr(data-text);
+  position: absolute;
+  color: rgba(59,130,246,5);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid rgba(59,130,246,5);
+  -webkit-text-stroke: 2px rgba(59,130,246,5);
+}
+
+.textDecors:hover::before{
+  width: 100%;
+  filter: drop-shadow(0 0 25px rgba(59,130,246,5));
+}
+
+.textShadow{
+  position: relative;
+  animation: animateText 5s linear infinite;
+}
+
+@keyframes animateText {
+  0%,18%,20%{
+    color: rgba(255, 255, 255, 0.056);
+    text-shadow: none;
+  }
+  18.1%,20.1%,100%{
+    color: #fffc00;
+    text-shadow: 0 0 10px #ffc107,0 0 20px #ffc107,0 0 40px #ffc107,0 0 160px #ffc107;
+  }
+}
+
+/* navBar */
+.active:hover::after{
+  content: attr(data-text);
+  position: absolute;
+  top: -60%;
+  display: flex;
+  color: #706F8E;
+  background: #101010;
+  padding: 0 10px;
+  border-radius: 10px;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+/* fondo del inicio */
+
+.layer-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layer{
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 10px 0 10px rgba(0,0,0,.25);
+}
+
+.layer.layer1{
+  background: rgba(147,197,253,1);
+  transform: skewX(-45deg) translateX(0);
+  z-index: 1;
+}
+
+.layer.layer2{
+  background: rgba(167,139,250,1);
+  transform: skewX(-45deg) translateX(-100px);
+  z-index: 3;
+}
+.layer.layer3{
+  background: rgba(248,113,113,1);
+  transform: skewX(-45deg) translateX(-200px);
+  z-index: 5;
+}
+.layer.layer4{
+  background: #2b2d42;
+  transform: skewX(-45deg) translateX(-300px);
+  z-index: 10;
+}
+.layer.layer5{
+  background: rgba(248,113,113,1);
+  transform: skewX(45deg) translateX(0);
+  z-index: 2;
+}
+.layer.layer6{
+  background: rgba(147,197,253,1);
+  transform: skewX(45deg) translateX(-100px);
+  z-index: 4;
+}
+.layer.layer7{
+  background: rgba(167,139,250,1);
+  transform: skewX(45deg) translateX(-200px);
+  z-index: 6;
+}
+.layer.layer8{
+  background: #2b2d42;
+  transform: skewX(45deg) translateX(-300px);
+  z-index: 8;
+}
+.layer.layer9{
+  background: transparent;
+  transform: skewX(45deg) translateX(-300px);
+  z-index: 10;
+}
