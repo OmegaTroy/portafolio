@@ -1,18 +1,14 @@
 'use client'
 
 import { AiFillGithub } from 'react-icons/ai'
-import { CgColorBucket } from 'react-icons/cg'
 import { FaTwitter } from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
 import { GoHomeFill } from 'react-icons/go'
-import { HiLightBulb } from 'react-icons/hi'
 import NavItems  from './NavItems'
 import NavMenu from './NavMenu'
 
 const links = [
   { name: 'Inicio', icons: <GoHomeFill />, path: '/' },
-  { name: 'Proyectos', icons: <HiLightBulb />, path: '/projects' },
-  { name: 'Posts', icons: <CgColorBucket />, path: '#' },
   { name: 'Twitter', icons: <FaTwitter />, path: 'https://twitter.com/MegaTroy777' },
   { name: 'Linkedin', icons: <BsLinkedin />, path: 'https://www.linkedin.com/in/julian-iocco-579a90224/' },
   { name: 'Github', icons: <AiFillGithub />, path: 'https://github.com/OmegaTroy' },

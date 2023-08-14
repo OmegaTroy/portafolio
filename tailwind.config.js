@@ -47,7 +47,7 @@ module.exports = {
         dark: "#2b2d42",
         boton: "#171821",
         seleste: "#2196f3",
-        gradi_dark: "rgba(248,113,113,1)",
+        gradi_dark1: "rgba(248,113,113,1)",
         gradi_dark2: "rgba(167,139,250,1)",
         gradi_blue: "rgba(147,197,253,1)",
         gradi_blue2: " rgba(59,130,246,5)",
