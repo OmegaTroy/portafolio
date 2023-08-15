@@ -16,7 +16,7 @@ const links = [
 
 const NavBar = () => {
   return (
-    <nav className="fixed z-40 w-[60px] h-[60px] md:w-[420px] md:h-[65px] top-[86%] bg-gradi_dark backdrop-blur flex justify-center items-center rounded-full md:rounded-lg shadow-xl shadow-FO">
+    <nav className="fixed z-40 w-[60px] h-[60px] md:w-[420px] md:h-[65px] top-2 bg-gradi_dark backdrop-blur flex justify-center items-center rounded-full md:rounded-lg shadow-xl shadow-FO">
       <NavItems links={links}/>
       <NavMenu links={links}/>
     </nav>
